@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motivation</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="h-screen bg-dark p-5 text-white">
+      <div class="flex items-center justify-end py-2">
+        <a href="../index.html" class="bg-red-600 py-2 px-5 rounded-xl"
+          >Close</a
+        >
+      </div>
+      <div class="w-full h-[44rem] flex flex-col items-center justify-center">
+        <div
+          class="border-4 w-2/3 mx-auto rounded-xl p-6 bg-primary drop-shadow-500/100 drop-shadow-xl/100 flex flex-col justify-between"
+        >
+          <div class="w-full flex">
+            <h1
+              class="border p-4 text-4xl bg-dark rounded-xl font-semibold"
+            >
+              Quote of the Day
+            </h1>
+          </div>
+          <div
+            class="w-full h-[20rem] mx-auto flex text-4xl justify-center p-6"
+          >
+            <h1 class="dailyQuote font-semibold text-gap-3 text-center"></h1>
+          </div>
+          <div class="author h-[3rem] text-4xl flex items-center justify-end">
+            <h1
+              class="border bg-dark px-5 py-2 rounded-xl font-semibold"
+            ></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="motivationScript.js"></script>
+  </body>
+</html>

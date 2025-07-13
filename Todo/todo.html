@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity DashBoard</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <div class="bg-dark h-screen w-full text-white p-5">
+      <div class="flex items-center justify-between py-2">
+        <h1 class="text-4xl font-bold">Your Personalised Task List</h1>
+        <a href="../index.html" class="bg-red-600 py-2 px-5 rounded-xl"
+          >Close</a
+        >
+      </div>
+
+      <div class="mt-5 w-full flex gap-4">
+        <form
+          class="flex flex-col gap-3 rounded-2xl p-4 text-xl text-black bg-primary w-1/3 h-[30rem]"
+        >
+          <input
+            type="text "
+            class="border rounded-lg bg-zinc-200 w-full p-2 outline-none"
+            placeholder="Title"
+          />
+          <textarea
+            name=""
+            id=""
+            rows="10"
+            class="border rounded-lg bg-zinc-200 w-full outline-0 p-2"
+            placeholder="Enter Details"
+          ></textarea>
+
+          <div class="flex gap-2">
+            <input type="checkbox" id="checkbox" class="cursor-pointer" />
+            <label for="checkbox" class="cursor-pointer text-sm md:text-lg" 
+              >Mark as Important</label
+            >
+          </div>
+
+          <button data-xyz="name"
+            class="bg-dark text-white rounded p-2 font-bold cursor-pointer"
+          >
+            Add Task
+          </button>
+        </form>
+
+        <div
+          class="todolist w-2/3 bg-primary rounded-2xl p-4 flex flex-col gap-3 max-h-[60rem] overflow-auto"
+        >
+          <!-- todo div -->
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="./todoScript.js"></script>
+  </body>
+</html>
